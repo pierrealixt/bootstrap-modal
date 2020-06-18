@@ -165,12 +165,12 @@
 						var arrayPos = $.inArray(tabindex, elements);
 						if (!e.shiftKey){
 						 		arrayPos < elements.length-1 ?
-									that.$element.find('[data-tabindex='+elements[arrayPos+1]+']').focus() :
-									that.$element.find('[data-tabindex='+elements[0]+']').focus();
+									that.$element.find('[data-tabindex='+elements[arrayPos+1]+']').trigger("focus") :
+									that.$element.find('[data-tabindex='+elements[0]+']').trigger("focus");
 							} else {
 								arrayPos == 0 ?
-									that.$element.find('[data-tabindex='+elements[elements.length-1]+']').focus() :
-									that.$element.find('[data-tabindex='+elements[arrayPos-1]+']').focus();
+									that.$element.find('[data-tabindex='+elements[elements.length-1]+']').trigger("focus") :
+									that.$element.find('[data-tabindex='+elements[arrayPos-1]+']').trigger("focus");
 							}
 						
 						e.preventDefault();
@@ -268,7 +268,7 @@
 
 			$focusElem = $focusElem.length ? $focusElem : this.$element;
 
-			$focusElem.focus();
+			$focusElem.trigger("focus");
 		},
 
 		attention: function (){
