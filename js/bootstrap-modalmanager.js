@@ -375,7 +375,7 @@
 				$baseBackdrop = $baseModal = null;
 			}
 
-			return baseIndex[type] + (zIndexFactor * pos);
+			return (baseIndex[type] + (zIndexFactor * pos)).toString();
 
 		}
 	}());
