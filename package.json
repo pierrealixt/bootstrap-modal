@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-modal",
+  "version": "1.0.0",
+  "description": "Fork of jschr-bootstrap-modal used by RecoMed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slventures/bootstrap-modal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slventures/bootstrap-modal/issues"
+  },
+  "homepage": "https://github.com/slventures/bootstrap-modal#readme"
+}
