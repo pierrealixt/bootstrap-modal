@@ -370,7 +370,7 @@
 			$target
 				.modal(option)
 				.one('hide', function () {
-					$this.focus();
+					$this.trigger('focus');
 				})
 		});
 	});
